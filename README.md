@@ -27,9 +27,36 @@ __Procedure__:
 5) (Optional) Add noise
 6) Coherent demodulation (multiply by synchronized carrier)
 7) Low-pass filter to recover message
+__Program__:
+```
+import numpy as np
+import matplotlib.pyplot as plt
 
+Am=13.5
+fm=720
+fc=7200
+fs=477000
+t=np.arange(0,2/fm,1/fs)
+m=Am*np.sin(2*np.pi*fm*t)
+plt.subplot(3,1,1)
+plt.plot(t,m)
+plt.grid()
+Ac=27
+c=Ac*np.sin(2*np.pi*fc*t)
+plt.subplot(3,1,2)
+plt.plot(t,c)
+plt.grid()
+s1=(Ac+m)*np.sin(2*np.pi*fc*t)
+s2=(Ac-m)*np.sin(2*np.pi*fc*t)
+s=s1-s2
+plt.subplot(3,1,3)
+plt.plot(t,s)
+plt.grid()
+```
    __Tabulation__:
 
    __Output__:
+<img width="1042" height="783" alt="image" src="https://github.com/user-attachments/assets/d867178e-e75a-4e1d-95ad-9efbd64ae7f9" />
 
    __Result__:
+Thus the Double SideBand supress carrier(DSBSC) using Python is Obtained and verified.
