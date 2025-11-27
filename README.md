@@ -54,6 +54,8 @@ plt.plot(t,s)
 plt.grid()
 ```
    __Tabulation__:
+![WhatsApp Image 2025-11-27 at 08 55 19_0ccbafbf](https://github.com/user-attachments/assets/bb2d60d1-372f-4530-9efe-499fd67788aa)
+![WhatsApp Image 2025-11-27 at 08 55 46_70c82f58](https://github.com/user-attachments/assets/b4f50f6a-c69b-4e47-b90d-9982098353a1)
 
    __Output__:
 <img width="1042" height="783" alt="image" src="https://github.com/user-attachments/assets/d867178e-e75a-4e1d-95ad-9efbd64ae7f9" />
